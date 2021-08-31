@@ -1,0 +1,605 @@
+@font-face {
+    font-family: Acumin;
+    font-weight: bold;
+    src: url("Acumin-BdPro.otf") format("opentype");
+}
+
+.modebar{
+      display: none !important;
+}
+
+@font-face {
+    font-family: Cookie;
+    font-weight: bold;
+    src: url("Cookie-Regular.ttf") format("opentype");
+}
+
+#app-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+    font-size: 15px;
+    margin: 0px;
+}
+
+hr {
+    margin: 0.3rem 0rem;
+}
+
+.banner {
+    box-shadow: 0 0 10px rgba(179, 157, 219, 0.7);
+    height: 5.5rem;
+    padding: 0rem 2rem 0rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#update-text-container {
+    padding-top: 0.8rem;
+    margin-left: 83%;
+    position: fixed;
+    font-family: Cookie;
+    font-weight: bold;
+    font-size: 1.5vw;
+    background: linear-gradient(0deg, rgba(178,114,228,1) 30%, rgba(109,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner Img {
+    position: relative;
+    height: 3rem;
+    width: auto;
+    margin-left: 2%;
+}
+
+H5 {
+    color: #2c8cff;
+    font-weight: 300;
+}
+
+H5, H3 {
+    font-family: Acumin, "Helvetica Neue", sans-serif;
+}
+
+#row-1, #row-three, #row-four {
+    background-color: #f4f4f4;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow-y: hidden;
+}
+
+#row-1 {
+    margin-top: 7rem;
+}
+
+#tweet_cards_header {
+    text-align: center;
+}
+
+#tweet_cards_header > h1 {
+    font-family: Cookie;
+    font-size: 4vw;
+    display: inline-block;
+    background: rgb(178,114,228);
+    background: linear-gradient(0deg, rgba(178,114,228,1) 30%, rgba(109,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#row-three {
+    background: rgb(238,238,238);
+    background: radial-gradient(circle, rgba(238,238,238,1) 30%, rgba(214,214,214,0.80015756302521) 100%);
+    padding: 1%;
+    width: 85%;
+    display: table;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#negative_tweet_card, #positive_tweet_card, #most_liked_tweet_card  {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    height: 43rem;
+    overflow: hidden;
+}
+
+#vibes_over_time_card, #vibe_check_card {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+#info_card {
+    background: rgb(131,84,255);
+    background: linear-gradient(126deg, rgba(131,84,255,1) 0%, rgba(0,219,235,1) 100%);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.81);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.81);
+    height: 30rem;
+    margin-top: 3rem;
+}
+
+#info_card, #country_card, #scomo_card {
+    margin-bottom: 1.5rem;
+}
+
+#most_liked_tweet_card {
+    background: rgb(148,108,255);
+    background: linear-gradient(324deg, rgba(148,108,255,1) 0%, rgba(0,219,235,1) 100%);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.81);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.81);
+}
+
+#vibe_check_card, #dan_v_gladys, #vaxx, #country_card, #scomo_card, #positive_tweet_card, #negative_tweet_card,
+#most_liked_tweet_card {
+    background-color: #FFFFFF;
+    padding: 1rem;
+}
+
+#dan_v_gladys, #vaxx {
+    margin-bottom: 2rem;
+}
+
+#country_card {
+    margin-left: 0px;
+    margin-right: 2%;
+}
+
+#country_card, #scomo_card  {
+    margin-top: 3rem;
+    height: 30rem;
+}
+
+#most_liked_tweet_card, #positive_tweet_card {
+    margin-left: 3%;
+}
+
+#tweet-text-container-negative > p, #tweet-text-container-positive > p {
+    font-size: 1vw;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+#tweet-text-container-negative > h1, #tweet-text-container-positive > h1 {
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tweet-text-container-negative, #tweet-text-container-positive {
+    position: relative;
+    top: 20%; left: 20%;
+    transform: translate(-20%,-20%);
+}
+
+#tweet-text-container-popular, #info-wrapper {
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#negative-hr, #positive-hr {
+    padding-bottom: 20px;
+}
+
+#info-wrapper > P, #tweet-text-container-popular > P {
+    color: white;
+    font-size: 1vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+#tweet-text-container-popular > P {
+    padding: 1.5rem;
+    padding-top: 0px;
+    padding-bottom: 0rem;
+    font-style: italic;
+}
+
+#tweet-text-container-popular > h1 {
+    color: white;
+    font-size: 1.75vw;
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+#tweet-text-container-popular > h2 {
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+#info-wrapper > h1 {
+    color: white;
+    font-size: 2vw;
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+#vibe_check_graph, #vibes_over_time_graph {
+    background-color: #FFFFFF;
+    padding: 0rem;
+    height: 30rem;
+}
+
+#country_graph, #scomo_graph {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    height: 23.5rem;
+}
+
+#dan_v_gladys_graph, #vaxx_graph {
+    padding: 1rem;
+    height: 30rem;
+}
+
+#negative_tweet_card, #positive_tweet_card, #most_liked_tweet_card {
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 1500px) {
+
+    #update-text-container {
+        font-size: 1.2vw;
+    }
+
+    #dan_v_gladys_graph, #vaxx_graph {
+        height: 40rem;
+    }
+
+    #vibe_check_graph, #vibes_over_time_graph {
+        height: 35rem;
+    }
+
+    #country_graph, #scomo_graph {
+        height: 32rem;
+    }
+
+    #info_card, #country_card, #scomo_card {
+        height: 40rem;
+    }
+
+    #negative_tweet_card, #positive_tweet_card, #most_liked_tweet_card  {
+        height: 50rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    body {
+        font-size: 2vw;
+        margin: 0px;
+    }
+
+    #update-text-container {
+        margin-left: 74%;
+        font-size: 2.4vw;
+    }
+
+    #row-1, #row-three, #row-four {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #left-column, #right-column {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    #row-1 {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    #row-three {
+        margin-bottom: 4rem;
+    }
+
+    #vibes_over_time_graph, #vibe_check_graph {
+        padding: 0rem;
+        margin: auto;
+        height: 35rem;
+    }
+
+    #info-wrapper > P {
+        font-size: 2vw;
+    }
+
+    #info-wrapper > h1 {
+        font-size: 3.5vw;
+        padding-top: 4rem;
+    }
+
+    #tweet-text-container-negative > p, #tweet-text-container-positive > p {
+        font-size: 1.5vw;
+    }
+
+    #tweet-text-container-negative > h1, #tweet-text-container-positive > h1 {
+        font-size: 1.5vw;
+    }
+
+    #tweet-text-container-popular > P {
+        font-size: 1.5w;
+    }
+
+    #tweet-text-container-popular > h1 {
+        font-size: 3vw;
+    }
+
+    #tweet_cards_header > h1 {
+        font-size: 5vw;
+    }
+
+    #negative_tweet_card, #positive_tweet_card, #most_liked_tweet_card {
+        width: 90%;
+        text-align: center;
+        display: table;
+        margin-left: 4.2%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #tweet-text-container-negative > p, #tweet-text-container-positive > p {
+        padding: 5rem;
+        padding-top: 7rem;
+        font-size: 2.4vw;
+    }
+
+    #tweet-text-container-negative > h1, #tweet-text-container-positive > h1 {
+        font-size: 2.4vw;
+    }
+
+    #tweet-text-container-popular > P {
+        font-size: 2.4vw;
+    }
+
+    #tweet-text-container-popular > h1 {
+        padding-top: 7rem;
+        font-size: 4vw;
+    }
+
+    #tweet-text-container-popular > h2 {
+        font-size: 3vw;
+    }
+
+    #tweet-text-container-negative, #tweet-text-container-positive {
+        position: relative;
+        top: 0%; left: 0%;
+        transform: translate(-0%,-0%);
+    }
+
+    #tweet-text-container-popular, #info-wrapper {
+        position: relative;
+        top: 0%; left: 0%;
+        transform: translate(-0%,-0%);
+    }
+
+    #most_liked_tweet_card {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #row-1, #row-three, #row-four {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #update-text-container {
+        margin-left: 70%;
+        font-size: 3.0vw;
+    }
+
+    #row-1 {
+        margin-top: 6rem;
+    }
+
+    #left-column, #right-column {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #vibes_over_time_graph, #vibe_check_graph {
+        padding: 0rem;
+        margin: auto;
+        height: 30rem;
+    }
+
+    #info-wrapper > P {
+        font-size: 2.2vw;
+    }
+
+    #info-wrapper > h1 {
+        font-size: 3.5vw;
+        padding-top: 5rem;
+    }
+
+    #row-1 {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    #row-three {
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles / ipad (Portrait)
+  */
+
+@media screen and (max-width: 570px) {
+
+    body {
+        font-size: 2.75vw;
+        margin: 0px;
+    }
+
+    .banner {
+        height: 6rem;
+    }
+
+    #row-1, #row-three, #row-four {
+        background-color: #f4f4f4;
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    #row-1 {
+        margin-top: 8rem;
+    }
+
+    #info_card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #vibes_over_time_card {
+        background-color: #FFFFFF;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    #vibe_check_card {
+        background-color: #FFFFFF;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    #vibes_over_time_graph, #vibe_check_graph {
+        background-color: #FFFFFF;
+        padding: 0rem;
+        margin: auto;
+        height: 25rem;
+    }
+
+    #vibe_check_graph {
+        height: 40rem;
+        padding: 0rem;
+    }
+
+    #country_card, #scomo_card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #scomo_card {
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    #tweet_cards_header > h1 {
+        font-size: 10vw;
+    }
+
+    #row-three {
+        width: 100%;
+    }
+
+    #negative_tweet_card, #positive_tweet_card, #most_liked_tweet_card {
+        width: 90%;
+        text-align: center;
+        display: table;
+        margin-left: 4.2%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #most_liked_tweet_card {
+        margin-bottom: 2rem;
+    }
+
+    #tweet-text-container-negative > p, #tweet-text-container-positive > p {
+        font-size: 3.6vw;
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+
+    #tweet-text-container-negative > h1, #tweet-text-container-positive > h1 {
+        font-size: 3.5vw;
+    }
+
+    #tweet-text-container-popular > P {
+        font-size: 3.8vw;
+    }
+
+    #tweet-text-container-popular > h1 {
+        padding-top: 6rem;
+        font-size: 7vw;
+    }
+
+    #tweet-text-container-popular > h2 {
+        font-size: 5vw;
+    }
+
+    #tweet-text-container-negative, #tweet-text-container-positive {
+        position: relative;
+        top: 0%; left: 0%;
+        transform: translate(-0%,-0%);
+    }
+
+    #tweet-text-container-popular, #info-wrapper {
+        position: relative;
+        top: 0%; left: 0%;
+        transform: translate(-0%,-0%);
+    }
+
+    #row-three {
+        background: #e2e2e2;
+        margin-bottom: 2rem;
+    }
+
+    #info-wrapper > P {
+        font-size: 3.2vw;
+    }
+
+    #info-wrapper > h1 {
+        font-size: 5vw;
+        padding-top: 3.5rem;
+    }
+
+    #update-text-container {
+        margin-left: 62%;
+        font-size: 3.5vw;
+    }
+
+    .banner Img {
+        margin-left: 0%;
+    }
+}
